@@ -1,0 +1,25 @@
+V-1.0.1
+[30/09/2026] 
+
+-Réorganisation du code : 
+	-Mise en place d'un fichier CSS séparer du HTML 
+	-Ajout de commentaire 
+	-Modification des container Projet Professionnels (GLPI, Evolution Odyssée)
+
+-Creation d'un Template sur la base de la page principale pour les documentation.
+(Arborescences: 'C:\Users\dylan\Documents\[V-1.0]www.dylangalles.fr\[V-1.0]www.dylangalles.fr\template' )
+[doc.html]
+[doc.css]
+
+-ajout des logo sur les certification et formation  
+-Modification de l'arborescence du projet  
+	(repertoire : css,html,images,template)                   
+
+
+[12/10/2026]
+
+Mise en place des mention légal en utilisant le template du site.
+-ajout du liens vers mention légal.
+-Test des redirection vers et depuis mention légal
+
+Déployement de la V-1.0.1 sur le serveur. 

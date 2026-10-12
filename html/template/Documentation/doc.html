@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Technicien Informatique</title>
+    <meta name="description" content="Portfolio  technicien informatique - Support, Réseaux, Systèmes">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="doc.css">
+</head>
+<body>
+
+    <!-- Barre de Navigation Haut de la page-->
+
+    <nav>
+        <div class="nav-container"> 
+            <a href="#" class="logo">Dylan<span>.</span>Galles</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#experience">Expérience</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+        </div>
+    </nav>
+
+    <section>
+
+        <div class="title_cont">
+            <h1>TITRE</h1>
+        </div>
+
+        <br>
+        <hr>
+        <br>
+
+        <div class="page_1">
+            <h2>SOMMAIRE :</h2>
+        </div>
+
+        <div class="nav_page_1">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        </div>
+
+        <br>
+        <hr>
+        <br>
+
+        <div class="page_2">
+            <p>Texte aléatoire pour montrer un rendu au pif
+
+                Adolf Hitler[n 1], né le 20 avril 1889 à Braunau am Inn (Autriche-Hongrie) et mort suicidé le 30 avril 1945 à Berlin, est un idéologue d'extrême droite[4],[5] et un homme d'État allemand d'origine autrichienne. Fondateur et figure centrale du nazisme, il arrive au pouvoir en Allemagne en 1933 et instaure rapidement une dictature totalitaire au programme impérialiste, antisémite, raciste, homophobe, xénophobe, eugéniste et génocidaire, désignée sous le nom de Troisième Reich.
+
+Établi dans sa prime jeunesse à Vienne puis à Munich, il essaie de devenir artiste peintre en autodidacte avant d'échouer aux Beaux-Arts. Bien qu'ayant tenté de se soustraire à ses obligations militaires, il participe à la Première Guerre mondiale au sein des troupes bavaroises. Après-guerre, il rentre à Munich où il mène une vie assez attentiste dans cette période troublée, avant d'adhérer au Parti ouvrier allemand (DAP), un groupuscule extrémiste de droite, ultranationaliste, völkisch qu'il transforme en Parti national-socialiste des travailleurs allemands (NSDAP) en 1920. Il s'impose par ses talents d'orateur à la tête du mouvement en 1921 et tente en 1923 un coup d'État infructueux. Il met à profit sa courte peine de prison pour rédiger le livre Mein Kampf dans lequel il expose ses conceptions racistes et ultranationalistes.
+
+Dans un climat de violence politique, il occupe une place croissante dans la vie publique allemande avec le parti nazi. Alors que la Grande Dépression fait rage, il se présente à l'élection présidentielle de 1932 contre le président du Reich Paul von Hindenburg, qui est réélu. Cependant, après les élections législatives de novembre 1932, celui-ci nomme Hitler chancelier en janvier 1933. Son gouvernement met très rapidement en place les premiers camps de concentration destinés à la répression des opposants politiques, notamment socialistes, communistes et syndicalistes.
+            </p>
+
+        </div>
+        <br>
+        <div class="btn_download">
+            <a href="#contact" class="btn btn-primary">Télécharger</a>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+        <p>© 2026 Dylan Galles — Technicien Informatique. Tous droits réservés.</p>
+        <p style="margin-top: 0.5rem;">Mention légale Bientôt disponible</p>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const navToggle = document.getElementById('navToggle');
+        const navLinks = document.getElementById('navLinks');
+
+        navToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Close menu on link click
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // Smooth scroll offset for fixed nav
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const offset = 80;
+                    const position = target.getBoundingClientRect().top + window.pageYOffset - offset;
+                    window.scrollTo({ top: position, behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
